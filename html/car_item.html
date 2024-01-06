@@ -1,0 +1,38 @@
+{%extends 'menu.html'%}{%load i18n%}
+
+{%block tit%}{{car.car_name}}{%endblock%}
+{%block out_header1%}{%block header1%}
+
+{%endblock%}{%endblock%}
+
+{%block cont_1%}
+<div class="output_3" style="overflow-y: auto;"><br>
+    <div id="output_header">
+        <h1 id="h3" class="title" >{%trans 'cars'%}</h1> 
+     </div>
+     
+    <div><h1 class='title'>{{car.car_name}}</h1><br><span></span></div>
+    <div class="body_1">
+        <div><ul>
+            <li class='title is-3'>{%trans 'amount'%}:{{car.amount}}</li>
+            <li class='title is-3'>{%trans 'price_per_item'%}:{%if car.price_per_item%}{{car.price_per_item}}{%else%}0{%endif%}   Egp</li>
+            <li class='title is-5'>{%trans 'info'%}:{{car.bio}}</li>
+            <li class='title is-6'>{%trans 'added_in'%}:{{car.added_in}}</li>
+        </ul></div>
+        <div>
+            <img style="border: 2px solid #fff;border-radius: 10px;" src={{car.car_poster.url}}/>
+        </div>
+     </div>
+ </div>
+
+ 
+
+{%endblock%}
+{%block out_content_1%}{%endblock%}{%block content_1%}{%endblock%}
+
+
+
+
+
+
+

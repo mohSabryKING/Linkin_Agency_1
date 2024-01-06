@@ -1,0 +1,178 @@
+{%load static%}{%load i18n%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="{% static 'css/model.css' %}">
+      <link rel="stylesheet" href="{% static 'css/bulma.css' %}">
+      <link rel="stylesheet" href="{% static 'css/bulma.min.css' %}">
+      <link rel="stylesheet" href="{% static 'css/bulma.css.map' %}">
+      <link rel="stylesheet" href="{% static 'css/bulma-rtl.css' %}">
+      <link rel="stylesheet" href="{% static 'css/bulma-rtl.css.map' %}">
+      <link rel="stylesheet" href="{% static 'css/bulma-rtl.min.css' %}">
+      <title>{%block tit%}menu page{%endblock%}</title>
+      
+      {%comment%}
+      {% #jil mega_speak head_title_home%}
+      INFO:
+      
+      نم تعريف جميع اسماء المنغيرات من خلال مكتبه روسيتا الموجوظه في الموقع
+      
+      {%endcomment%}
+      
+</head>
+<style>
+      .button{position: inherit;top: 20px;border: 0px;}
+      
+.shadow_btn1{background-color: rgb(255, 0, 0);color: aliceblue; box-shadow: 0px 0px 10px 5px #000;margin-top: 20px;}
+.shadow_btn1:hover{background-color:white;color: rgb(255, 0, 0); box-shadow: 0px 0px 10px 5px #000;margin-top: 20px;}
+
+.shadow_btn2{background-color: rgb(105, 105, 105);color: aliceblue ;border-radius: 5px;margin-top: 20px;box-shadow: 0px 0px 10px 5px #000;}
+.shadow_btn2:hover{background-color: white;color: rgb(105, 105, 105);border-radius: 5px;margin-top: 20px; box-shadow: 0px 0px 10px 5px #000;}
+
+</style>
+<header>
+      <section class="hero is-fullheight">
+            <div class="hero-head" id="top_head" style="">
+
+                  <div class="sm_group">
+                        <div>
+                              <a href="">
+                                    <img src="{%static 'img/sm/fb.svg'%}" alt="" class="sm_model">
+                              </a>
+                        </div>
+                        <div>
+                              <a href="">
+                                    <img src="{%static 'img/sm/linkedin.svg'%}" alt="" class="sm_model">
+                              </a>
+                        </div>
+                        <div>
+                              <a href="">
+                                    <img src="{%static 'img/sm/pintrest.svg'%}" alt="" class="sm_model">
+                              </a>
+                        </div>
+                        <div>
+                              <a href="">
+                                    <img src="{%static 'img/sm/whatsapp.svg'%}" alt="" class="sm_model">
+                              </a>
+                        </div>
+                        <div>
+                              <a href="">
+                                    <img src="{%static 'img/sm/insta.svg'%}" alt="" class="sm_model">
+                              </a>
+                        </div>
+                  </div>
+                  <div style="margin: auto;padding: 20px;" class="level is-hidden-touch">
+                        <div class="level-left">LEFT1</div>
+                        <div class="level-right">
+                              <div class="menu_col">
+                                    <a href="" class="btn_model" id="id1">{%trans 'Register' %}</a>
+                                    <a href="" class="btn_model" id="id2">{%trans 'prints' %}</a>
+                                    <a href="" class="btn_model" id="id3">{%trans 'social_posts' %}</a>
+                                    <a href="" class="btn_model" id="id4">{%trans 'web_sites' %}</a>
+                                    <a href="" class="btn_model" id="id5">{%trans 'cars' %}</a>
+                                    <a href="" class="btn_model" id="id6">{%trans 'services' %}</a>
+                                    <a href="" class="btn_model" id="id7">{%trans 'Contacts' %}</a>
+                              </div>
+                        </div>
+                  </div>
+                  <div style="display: flex;padding: 20px;" class="level is-hidden-desktop">
+                        <div class="level-left">LEFT2</div>
+                        <div class="level-right" style="margin: 0px;">
+                        <a id="" onclick="display_menu();" style="background-color: rgba(240, 248, 255, 0);width: fit-content;"><img src="{%static 'img/hamburg.svg'%}" height="32px" width="32px" alt=""></a>
+                        </div>
+                  </div>
+            </div>
+            <div class="menu_row" id="menu_list">
+                  <a href="" class="btn_model" id="idx1">{%trans 'Register' %}</a>
+                  <a href="" class="btn_model" id="idx2">{%trans 'prints' %}</a>
+                  <a href="" class="btn_model" id="idx3">{%trans 'social_posts' %}</a>
+                  <a href="" class="btn_model" id="idx4">{%trans 'web_sites' %}</a>
+                  <a href="" class="btn_model" id="idx5">{%trans 'cars' %}</a>
+                  <a href="" class="btn_model" id="idx6">{%trans 'services' %}</a>
+                  <a href="" class="btn_model" id="idx7">{%trans 'Contacts' %}</a>
+            </div>
+            <div class="hero-body">
+                  
+                  <div class="header_content">
+                        <div id="c1" class="content_num1">
+                              <img src="{%static 'img/bs.png'%}" alt="HEAD_IMG">
+                        </div>
+                        <div id="c2" class="content_num2" dir="ltr">
+                              <h1>display meta content</h1>
+                              <h2>display meta contentSSS</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quis quod facilis, placeat iste modi expedita eius at, hic unde rem repellat nobis quisquam perferendis aliquid pariatur itaque dolorem doloremque!</p>
+                              <a href="" class="button shadow_btn1">display contents</a>
+                        </div>
+                  </div>
+                  
+            </div>
+            <div class="hero-foot" >
+                  
+
+            </div>
+
+      </section>
+      
+</header>
+<body>
+      <section class="hero is-halfheight " >
+            <div class="header_content is-fullheight">
+                  <div class="content_x1" ></div>
+                  <div class="content_x2"></div>
+            </div>
+            <div class="header_content is-fullheight">
+                  <div class="content_x2"></div>
+                  <div class="content_x1" ></div>
+                  
+            </div>
+            <div class="body_content1">
+                  <div class="content_obj content_1">jjj</div>
+                  <div class="content_obj content_2">hhh</div>
+                  <div class="content_obj content_3">ddd</div>
+            </div>
+            
+            
+      </section>
+      {%block content%}
+      <section class="hero is-fullheight " >
+            <div class="header_content is-fullheight">
+                  <div class="content_x2" ></div>
+                  <div class="content_x3"></div>
+            </div>
+            <div class="header_content is-fullheight">
+                  <div class="content_x3" ></div>
+            <div class="content_x2"></div>
+            </div>
+            <div class="body_content1">
+                  <div class="content_obj content_1">jjj</div>
+                  <div class="content_obj content_2">hhh</div>
+                  <div class="content_obj content_3">ddd</div>
+            </div>
+            
+            
+      </section>
+      {%endblock%}
+     
+      <script>
+            var btn_hamb=document.getElementById('menu_list');
+            function display_menu() {
+                  if (btn_hamb.style.display==="none") {
+                        btn_hamb.style.display='grid';
+                        console.log("calling grid display action");
+                  } else {
+                        btn_hamb.style.display='none';
+                        console.log("calling NONE display action");
+                  }
+                  
+            }
+      </script>
+</body>
+<footer>
+      <section class="hero is-fullheight" style="background-color: #000;">
+            <div class="hero-head" style="background-color: rgb(70, 70, 70);">uuu</div>
+            <div class="hero-body" style="background-color: rgb(0, 0, 0);">yyy</div>
+      </section>
+</footer>
+</html>

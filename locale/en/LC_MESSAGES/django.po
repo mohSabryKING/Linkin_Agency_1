@@ -1,0 +1,413 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-31 13:08+0200\n"
+"PO-Revision-Date: 2023-12-30 13:14+0000\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: .\Agency_action\models.py:17
+msgid "emp_name"
+msgstr "employee name"
+
+#: .\Agency_action\models.py:18
+msgid "emp_img"
+msgstr "employee image"
+
+#: .\Agency_action\models.py:19
+msgid "salary"
+msgstr "salary"
+
+#: .\Agency_action\models.py:20
+msgid "position"
+msgstr "positon"
+
+#: .\Agency_action\models.py:36
+msgid "related_to_user"
+msgstr "related to user"
+
+#: .\Agency_action\models.py:39
+msgid "client_img"
+msgstr "client photo"
+
+#: .\Agency_action\models.py:40
+msgid "client_name"
+msgstr "client name"
+
+#: .\Agency_action\models.py:42
+msgid "phone_number"
+msgstr "phone_number"
+
+#: .\Agency_action\models.py:45 .\Agency_action\models.py:46
+msgid "user_profile"
+msgstr ""
+
+#: .\Agency_action\models.py:56
+msgid "add_to_x"
+msgstr "added to client"
+
+#: .\Agency_action\models.py:59
+msgid "post_name"
+msgstr ""
+
+#: .\Agency_action\models.py:60
+msgid "platform_type"
+msgstr ""
+
+#: .\Agency_action\models.py:61 .\Agency_action\models.py:116
+msgid "url_hyperlink"
+msgstr ""
+
+#: .\Agency_action\models.py:62
+msgid "postgraph"
+msgstr ""
+
+#: .\Agency_action\models.py:63 .\Agency_action\models.py:89
+#: .\Agency_action\models.py:117 .\Agency_action\models.py:138
+msgid "bio"
+msgstr ""
+
+#: .\Agency_action\models.py:64 .\Agency_action\models.py:84
+#: .\html\post_item.html:20
+msgid "campagin_cost"
+msgstr ""
+
+#: .\Agency_action\models.py:70 .\Agency_action\models.py:71
+#, fuzzy
+#| msgid "Social media"
+msgid "social_media"
+msgstr "Social media"
+
+#: .\Agency_action\models.py:82
+msgid "for_client_x1"
+msgstr ""
+
+#: .\Agency_action\models.py:85
+#, fuzzy
+#| msgid "Printings"
+msgid "print_type"
+msgstr "Printings"
+
+#: .\Agency_action\models.py:87
+msgid "title"
+msgstr ""
+
+#: .\Agency_action\models.py:88
+#, fuzzy
+#| msgid "Printings"
+msgid "printing_model"
+msgstr "Printings"
+
+#: .\Agency_action\models.py:90 .\html\car_item.html:18
+#: .\html\print_item.html:17
+msgid "price_per_item"
+msgstr ""
+
+#: .\Agency_action\models.py:91 .\html\car_item.html:17
+#: .\html\print_item.html:16
+msgid "amount"
+msgstr ""
+
+#: .\Agency_action\models.py:98 .\Agency_action\models.py:99
+#: .\html\menu.html:96 .\html\menu.html:194 .\html\menu1.txt:72
+#: .\html\menu1.txt:90 .\html\menu2.txt:72 .\html\menu2.txt:90
+#: .\html\print_item.html:10 .\html\web_item.html:13
+#, fuzzy
+#| msgid "Printings"
+msgid "prints"
+msgstr "Printings"
+
+#: .\Agency_action\models.py:110
+msgid "for_client_x2"
+msgstr ""
+
+#: .\Agency_action\models.py:113 .\html\web_item.html:18
+msgid "web_name"
+msgstr ""
+
+#: .\Agency_action\models.py:114
+msgid "web_type"
+msgstr ""
+
+#: .\Agency_action\models.py:115
+msgid "logo"
+msgstr ""
+
+#: .\Agency_action\models.py:121 .\Agency_action\models.py:122
+#: .\html\menu.html:98 .\html\menu.html:196 .\html\menu.html:235
+#: .\html\menu1.txt:74 .\html\menu1.txt:92 .\html\menu2.txt:74
+#: .\html\menu2.txt:92 .\html\menu3.txt:15
+#, fuzzy
+#| msgid "All websites"
+msgid "web_sites"
+msgstr "All websites"
+
+#: .\Agency_action\models.py:132
+msgid "for_client_x3"
+msgstr ""
+
+#: .\Agency_action\models.py:135
+msgid "car_name"
+msgstr ""
+
+#: .\Agency_action\models.py:136
+msgid "car_poster"
+msgstr ""
+
+#: .\Agency_action\models.py:143 .\Agency_action\models.py:144
+#: .\html\car_item.html:11 .\html\menu.html:99 .\html\menu.html:197
+#: .\html\menu.html:237 .\html\menu1.txt:75 .\html\menu1.txt:93
+#: .\html\menu2.txt:75 .\html\menu2.txt:93 .\html\menu3.txt:17
+msgid "cars"
+msgstr ""
+
+#: .\Agency_action\models.py:159
+msgid "for_client_x4"
+msgstr ""
+
+#: .\Agency_action\models.py:162
+msgid "service_name"
+msgstr ""
+
+#: .\Agency_action\models.py:163
+msgid "service_info"
+msgstr ""
+
+#: .\Agency_action\models.py:169 .\Agency_action\models.py:170
+#, fuzzy
+#| msgid "Service Providers"
+msgid "providers"
+msgstr "Service Providers"
+
+#: .\Agency_action\views.py:108
+msgid "Menu page"
+msgstr "Menu page"
+
+#: .\Agency_action\views.py:140
+msgid "Printings"
+msgstr "Printings"
+
+#: .\Agency_action\views.py:153
+msgid "Social media"
+msgstr "Social media"
+
+#: .\Agency_action\views.py:164
+msgid "All websites"
+msgstr "All websites"
+
+#: .\Agency_action\views.py:176
+msgid "Service Providers"
+msgstr "Service Providers"
+
+#: .\Agency_action\views.py:188
+msgid "Sport cars"
+msgstr "Sport cars"
+
+#: .\Linkin_Agency\settings.py:138
+msgid "English"
+msgstr "English"
+
+#: .\Linkin_Agency\settings.py:138
+msgid "Arabic"
+msgstr "Arabic"
+
+#: .\Linkin_Agency\settings.py:138
+msgid "Germany"
+msgstr "Germany"
+
+#: .\html\car_item.html:19 .\html\post_item.html:19 .\html\print_item.html:18
+#: .\html\web_item.html:20
+msgid "info"
+msgstr ""
+
+#: .\html\car_item.html:20 .\html\post_item.html:21 .\html\print_item.html:19
+#: .\html\web_item.html:21
+msgid "added_in"
+msgstr ""
+
+#: .\html\create_profile.html:10
+msgid "create_your_profile"
+msgstr ""
+
+#: .\html\create_profile.html:47 .\html\log.html:24 .\html\sign_up.html:31
+msgid "submit"
+msgstr ""
+
+#: .\html\log.html:3 .\html\log.html:13
+msgid "log_in"
+msgstr ""
+
+#: .\html\log.html:16 .\html\sign_up.html:19
+msgid "username"
+msgstr ""
+
+#: .\html\log.html:20 .\html\sign_up.html:23
+msgid "password1"
+msgstr ""
+
+#: .\html\log.html:25
+msgid "new_user"
+msgstr ""
+
+#: .\html\menu.html:80 .\html\menu.html:174
+msgid "Linkin Agency"
+msgstr ""
+
+#: .\html\menu.html:92 .\html\menu.html:190
+msgid "Profile"
+msgstr ""
+
+#: .\html\menu.html:94 .\html\menu.html:192 .\html\menu1.txt:71
+#: .\html\menu1.txt:89 .\html\menu2.txt:71 .\html\menu2.txt:89
+msgid "Register"
+msgstr ""
+
+#: .\html\menu.html:97 .\html\menu.html:195 .\html\menu.html:234
+#: .\html\menu1.txt:73 .\html\menu1.txt:91 .\html\menu2.txt:73
+#: .\html\menu2.txt:91 .\html\menu3.txt:14
+msgid "social_posts"
+msgstr ""
+
+#: .\html\menu.html:100 .\html\menu.html:198 .\html\menu1.txt:76
+#: .\html\menu1.txt:94 .\html\menu2.txt:76 .\html\menu2.txt:94
+msgid "services"
+msgstr ""
+
+#: .\html\menu.html:101 .\html\menu.html:199 .\html\menu1.txt:77
+#: .\html\menu1.txt:95 .\html\menu2.txt:77 .\html\menu2.txt:95
+msgid "Contacts"
+msgstr ""
+
+#: .\html\menu.html:208
+msgid "hellow my site"
+msgstr ""
+
+#: .\html\menu.html:209
+msgid "hellow my site2"
+msgstr ""
+
+#: .\html\menu.html:211
+msgid ""
+"Lorem,_ipsum "
+"dolor_sit_amet_consectetur_adipisicing_elit_Iste_explicabo_necessitatibus_beatae,"
+"_aliquid_consequuntur_praesentium_unde_sapiente_corporis_laborum_dolor_quibusdam_sed_mollitia_fugit_tenetur_cumque_porro,"
+"_aspernatur_a_temporibus?"
+msgstr ""
+
+#: .\html\menu.html:213
+msgid "display_content"
+msgstr ""
+
+#: .\html\menu.html:232 .\html\menu3.txt:12
+#, fuzzy
+#| msgid "Service Providers"
+msgid "services that we provide"
+msgstr "Service Providers"
+
+#: .\html\menu.html:236 .\html\menu3.txt:16
+#, fuzzy
+#| msgid "Printings"
+msgid "prints_x"
+msgstr "Printings"
+
+#: .\html\menu.html:238 .\html\menu3.txt:18
+msgid "and more"
+msgstr ""
+
+#: .\html\menu.html:245 .\html\menu3.txt:38
+msgid "statistics"
+msgstr ""
+
+#: .\html\menu.html:246 .\html\menu3.txt:39
+#, fuzzy
+#| msgid "All websites"
+msgid "web_sites__1"
+msgstr "All websites"
+
+#: .\html\menu.html:247 .\html\menu3.txt:40
+#, fuzzy
+#| msgid "Printings"
+msgid "prints_x__1"
+msgstr "Printings"
+
+#: .\html\menu.html:248 .\html\menu3.txt:41
+msgid "social_posts__1"
+msgstr ""
+
+#: .\html\menu.html:249 .\html\menu3.txt:42
+msgid "cars__1"
+msgstr ""
+
+#: .\html\post_item.html:3 .\html\post_item.html:11
+msgid "post"
+msgstr ""
+
+#: .\html\post_item.html:17
+msgid "platform"
+msgstr ""
+
+#: .\html\post_item.html:18
+msgid "visit_post"
+msgstr ""
+
+#: .\html\post_item.html:18
+msgid "display_post"
+msgstr ""
+
+#: .\html\sign_up.html:14 .\html\user_profile.html:6
+msgid "Add_new_user"
+msgstr ""
+
+#: .\html\sign_up.html:27
+msgid "password2"
+msgstr ""
+
+#: .\html\web_item.html:19
+msgid "web_url"
+msgstr ""
+
+#, fuzzy
+#~| msgid "Service Providers"
+#~ msgid "servics that we provide"
+#~ msgstr "Service Providers"
+
+#, fuzzy
+#~| msgid "Printings"
+#~ msgid "Prints"
+#~ msgstr "Printings"
+
+#, fuzzy
+#~| msgid "Sport cars"
+#~ msgid "sport_cars"
+#~ msgstr "Sport cars"
+
+#, fuzzy
+#~ msgid "All requsted cars"
+#~ msgstr "All websites"
+
+#, fuzzy
+#~ msgid "All requsted web_site"
+#~ msgstr "All websites"
+
+#~ msgid "Jil"
+#~ msgstr "hero"
+
+#~ msgid "mega_speak"
+#~ msgstr ""
+#~ "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae "
+#~ "ratione reprehenderit soluta libero doloribus? Consequatur "
+#~ "exercitationem, similique pariatur voluptates reprehenderit aut. Quos "
+#~ "velit tempore cum ipsam cumque ducimus explicabo culpa!"

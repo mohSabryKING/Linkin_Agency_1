@@ -1,0 +1,32 @@
+{%load widget_tweaks%}{%load i18n%}
+
+
+<form action="{%url 'reg'%}" method="POST" class="form" style="padding: 10px;" novalidate>{%csrf_token%}
+  {%for f in form%}
+  <div class="field">
+      <label class="label">{{f.label}}</label>
+      {%if form.is_bound%}
+       {%if f.errors%}
+       {%render_field f class='input is-danger'%}
+         {%for e in f.errors%}  <br><small style="color: white;background-color: red;padding: 1%;">{{e}}</small><br>{%endfor%}
+       {%else%}
+       {%render_field f class='input is-success'%}
+      {%endif%}
+
+      {%else%}
+      {%render_field f class='input'%}
+      {%endif%}
+
+
+
+      
+      {%if f.help_text%}
+      <small class="subtitle is-6" style="color: white;text-align: center;">{{f.help_text}}</small>
+      {%else%}none{%endif%}
+  </div>
+  {%endfor%}
+  
+  <div class="field" style="text-align: center;font-size: medium;">
+      <button type="submit" class="button is-success is-light" style="font-size: large;" >{%trans 'submit'%}</button>
+  </div>
+</form>

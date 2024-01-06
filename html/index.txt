@@ -1,0 +1,50 @@
+{%extends 'menu.html'%}
+
+{%block tit%}menu page{%endblock%}
+{%block header1%}{%endblock%}
+{%block out_header1%}{%endblock%}
+{%block cont_1%}{%endblock%}
+{%block content_1%}{%endblock%}
+{%block out_cont_1%}{%endblock%}
+{%block out_content_1%}{%endblock%}
+
+
+
+
+
+{%for i in ccc%}{%endfor%}
+{%if cond%}{%else%}{%endif%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////INSIDE THE CONTENT/////////////
+
+
+
+  {%for i in social_posts%}{{i.print_model}}<br>{%endfor%}<br><br>
+      {%for i in prints%}{{i.print_model}}<br>{%endfor%}<br><br>
+      {%for i in providers%}{{i.print_model}}<br>{%endfor%}<br><br>
+      {%for i in websites%}{{i.print_model}}<br>{%endfor%}<br><br>
+      {%for i in car_models%}{{i.print_model}}<br>{%endfor%}<br><br>    
+      
+      {{intro_model}}
+      <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est consequuntur earum cupiditate nobis provident, amet voluptate molestias corrupti! Veniam, eligendi. Perferendis neque eos, nihil autem magnam vel omnis nobis ullam.  
+      </p>
+      <br>
+  

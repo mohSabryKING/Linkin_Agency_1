@@ -1,0 +1,39 @@
+{%extends 'menu.html'%}{%load i18n%}
+
+{%block tit%}menu page{%endblock%}
+{%block out_header1%}{%block header1%}
+
+
+{%endblock%}{%endblock%}
+
+{%block cont_1%}
+
+<div class="output_3" style="overflow-y: auto;"><br>
+    <div id="output_header">
+        <h1 id="h3" class="title" >{%trans 'prints'%}</h1> 
+     </div>
+    <div><h1 class='title'>{{web.title}}</h1><br><span></span></div>
+    <div class="body_1">
+        <div><ul>
+            <li class='title is-3'>{%trans 'web_name'%}:{{web.web_name}}:{{web.web_type}}</li>
+            <li class='title is-3'>{%trans 'web_url'%}: <a href="{{web.url_hyperlink}}" class="button is-info">visit_web</a></li>
+            <li class='title is-5'>{%trans 'info'%}:{{web.bio}}</li>
+            <li class='title is-6'>{%trans 'added_in'%}:{{web.added_in}}</li>
+        </ul></div>
+        <div>
+            <img style="border: 2px solid #fff;border-radius: 10px;" src={{web.logo.url}}/>
+        </div>
+     </div>
+ </div>
+
+ 
+
+{%endblock%}
+{%block out_content_1%}{%block content_1%}{%endblock%}{%endblock%}
+
+
+
+
+
+
+

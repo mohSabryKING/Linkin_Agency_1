@@ -1,0 +1,291 @@
+{%load static%}{%load i18n%}
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="{% static 'css/model2.css' %}">
+      <link rel="stylesheet" href="{% static 'css/bulma.css' %}">
+      <link rel="stylesheet" href="{% static 'css/bulma.min.css' %}">
+      <link rel="stylesheet" href="{% static 'css/bulma.css.map' %}">
+      <link rel="stylesheet" href="{% static 'css/bulma-rtl.css' %}">
+      <link rel="stylesheet" href="{% static 'css/bulma-rtl.css.map' %}">
+      <link rel="stylesheet" href="{% static 'css/bulma-rtl.min.css' %}">
+      <title>{%block tit%}menu page{%endblock%}</title>
+      
+      {%comment%}
+      {% #jil mega_speak head_title_home%}
+      INFO:
+      
+      نم تعريف جميع اسماء المنغيرات من خلال مكتبه روسيتا الموجوظه في الموقع
+      
+      {%endcomment%}
+      
+</head>
+<style>
+      .button{position: inherit;top: 20px;border: 0px;}
+      
+.shadow_btn1{background-color: rgb(0, 80, 255);color: aliceblue; box-shadow: 0px 0px 10px 5px #000;margin-top: 20px;}
+.shadow_btn1:hover{background-color:white;color: rgb(0, 80, 255); box-shadow: 0px 0px 10px 5px #000;margin-top: 20px;}
+
+.shadow_btn2{background-color: rgb(0, 80, 245);padding: 10px;color: aliceblue ;border-radius: 5px;margin-top: 20px;box-shadow: 0px 0px 10px 5px #000;font-size: larger;}
+.shadow_btn2:hover{background-color: white;color: rgb(105, 105, 105);padding: 20px;border-radius: 5px;margin-top: 20px; box-shadow: 0px 0px 10px 5px #000;font-size: larger;}
+
+.columns{padding:0px;margin: 0px;}
+.column{padding: 0px;margin: 0px;text-align: center;}
+.hero.is-halfheight>div{color: #fff;}
+.title{color: white;}
+.field>label.label{font-size:xx-large;color: #fff;text-align: center;}
+
+@media (min-width:801px) {
+      #cont_1{position: relative;z-index: 20;background-color: #0000007c;padding: 20px;border-radius: 20px;color: white;}
+      #cont_1>h1+h2+p{color: #ffffff;}}
+</style>
+<header>
+      <div class="sm_group">
+            <div>
+                  <a href="">
+                        <img src="{%static 'img/sm/fb.svg'%}" alt="" class="sm_model">
+                  </a>
+            </div>
+            <div>
+                  <a href="">
+                        <img src="{%static 'img/sm/linkedin.svg'%}" alt="" class="sm_model">
+                  </a>
+            </div>
+            <div>
+                  <a href="">
+                        <img src="{%static 'img/sm/pintrest.svg'%}" alt="" class="sm_model">
+                  </a>
+            </div>
+            <div>
+                  <a href="">
+                        <img src="{%static 'img/sm/whatsapp.svg'%}" alt="" class="sm_model">
+                  </a>
+            </div>
+            <div>
+                  <a href="">
+                        <img src="{%static 'img/sm/insta.svg'%}" alt="" class="sm_model">
+                  </a>
+            </div>
+      </div>
+      <section>
+            <div class="head is-hidden-touch">
+                  <div id="brand">
+                        <div>
+                              <img src="{%static 'img/LOGO2.svg'%}" width="32px" height="32px" alt="" srcset="">
+                        </div>
+                        <div>
+                             <h1 class='title is-5'><a href="{%url 'menu'%}" style="color: #fff;">{%trans 'Linkin Agency' %}</a></h1>
+                        </div>
+                        <select name="ddd" id="" style="position: relative;z-index: 50;left: 20px;">
+                              <option value="gr">gr</option>
+                              <option value="ar">ar</option>
+                              <option value="en">en</option>
+                        </select>
+                  </div>
+                  <div id="t2">
+                        <div class="menu_col">
+                              {%if user.is_authenticated%}
+                             
+                              <a href="{%url  'show_profile' 'mohamed'%}" class="btn_model"  id="id1">{%trans 'Profile' %}</a>
+                              {%else%}
+                             <a href="{%url  'reg'%}" class="btn_model"  id="id1">{%trans 'Register' %}</a>
+                              {%endif%}
+                              <a href="{%url 'prints'%}" class="btn_model" onmouseover="view_top_data(this,'c2');"  onmouseleave="out_x(this,'c2')"  id="id2">{%trans 'prints' %}</a>
+                              <a href="{%url 'social'%}" class="btn_model" onmouseover="view_top_data(this,'c3');"  onmouseleave="out_x(this,'c3')"  id="id3">{%trans 'social_posts' %}</a>
+                              <a href="{%url 'web_sites'%}" class="btn_model" onmouseover="view_top_data(this,'c4');"  onmouseleave="out_x(this,'c4')" id="id4">{%trans 'web_sites' %}</a>
+                              <a href="{%url  'cars'%}" class="btn_model" onmouseover="view_top_data(this,'c5');"  onmouseleave="out_x(this,'c5')" id="id5">{%trans 'cars' %}</a>
+                              <a href="{%url  'providors'%}" class="btn_model" onmouseover="view_top_data(this,'c6');"  onmouseleave="out_x(this,'c6')" id="id6">{%trans 'services' %}</a>
+                              <a href="#calls" class="btn_model"  id="id7">{%trans 'Contacts' %}</a>
+                              
+
+                        </div>
+
+                       
+                  </div>
+            </div>
+            
+                  <div class="content_display" onmouseover="view_top_data(this,'c2');" onmouseout="out_x(this,'c2');" id="c2">
+                   <div class="columns is-multiline">{%for i in prints%}
+                        <div class="column is-3">
+                             <a href="{% url 'p_item' i.pk %}">
+                        
+                        {{i.print_model}}</a> 
+                        </div>
+                        
+                        
+                        {%endfor%}</div>
+                   
+             </div>
+             <div class="content_display" onmouseover="view_top_data(this,'c3');" onmouseout="out_x(this,'c3');" id="c3">
+                   <div class="columns is-multiline">
+                        {%for i in social_posts%}
+                        <div class="column is-3"><a href="{% url 'sm_item' i.pk %}">
+                        {{i.print_model}}</a></div>
+                   
+                   {%endfor%} 
+                   </div>
+                   
+                   </div>
+             <div class="content_display" onmouseover="view_top_data(this,'c4');" onmouseout="out_x(this,'c4');" id="c4">
+                   <div class="columns is-multiline">
+                       {%for i in websites%}
+                       <div class="column is-3">
+                         <a href="{% url 'w_item' i.pk %}" class="btn_model">{{i.web_name}}</a>
+                       </div>
+                   {%endfor%}   
+                   
+                   </div>
+                   
+                  </div>
+             <div class="content_display" onmouseover="view_top_data(this,'c5');" onmouseout="out_x(this,'c5');" id="c5">
+                   
+                   <div class="columns is-multiline">
+                         {%for i in car_models%}
+                         <div class="column is-3">
+                              <a href="{% url 'c_item' i.pk %}" style="color: white;">{{i.car_name}} in {{i.added_in}}</a>
+                         </div>
+                   
+                   {%endfor%}
+                   </div>
+                   
+                   </div>
+             <div class="content_display" onmouseover="view_top_data(this,'c6');" onmouseout="out_x(this,'c6');" id="c6">
+                   <div class="columns is-multiline">
+                          {%for i in providors%}
+                          <div class="column is-3">
+                              <a style="color: white;" href="{% url 'providors' i.pk %}">
+                        {{i.print_model}}</a>
+                          </div>
+                   
+                   {%endfor%}
+                   </div>
+                   
+                  </div> 
+             
+             
+ 
+            <div class="head is-hidden-desktop">
+                  <div id="t1">
+                        <div id='brand'>
+                              <div><img src="{%static 'img/LOGO2.svg'%}" width="32px" height="32px" alt="" srcset=""></div>
+                              <div><h1 class='title is-5' style="color: #fff;"><a href="{%url 'menu'%}"  style="color: #fff;">{%trans 'Linkin Agency' %}</a></h1></div>
+                              <select name="ddd" id="" style="position: relative;z-index: 50;left: 20px;">
+                                    <option value="gr">gr</option>
+                                    <option value="ar">ar</option>
+                                    <option value="en" selected="true">en</option>
+                              </select>
+                        </div>
+                  </div>
+                  <div id="t2">
+                        <a id="" onclick="display_menu();" class=".display_content"><img src="{%static 'img/hamburg.svg'%}" height="32px" width="32px" alt=""></a>
+                       
+                  </div>
+                  
+            </div>
+            <div class="menu_row" id="menu_list">
+                  {%if user.is_authenticated%}
+                              <a href="{%url  'show_profile' 'mohamed'%}" class="btn_model"  id="idx1">{%trans 'Profile' %}</a>
+                              {%else%}
+                             <a href="{%url  'reg'%}" class="btn_model"  id="idx1">{%trans 'Register' %}</a>
+                              {%endif%}
+                  <a href="{%url 'prints'%}" class="btn_model" id="idx2">{%trans 'prints' %}</a>
+                  <a href="{%url  'social'%}" class="btn_model" id="idx3">{%trans 'social_posts' %}</a>
+                  <a href="{%url  'web_sites'%}" class="btn_model" id="idx4">{%trans 'web_sites' %}</a>
+                  <a href="{%url  'cars'%}" class="btn_model" id="idx5">{%trans 'cars' %}</a>
+                  <a href="{%url  'providors'%}" class="btn_model" id="idx6">{%trans 'services' %}</a>
+                  <a href="#call" class="btn_model" id="idx7">{%trans 'Contacts' %}</a>
+            </div>{%block out_header1%}
+            <div class="body_1"  style="min-height: 100vh;">
+                  {%block header1%}
+                  <div>
+                        <img src="{%static 'img/bs.png'%}" alt="" srcset="">
+                  </div>
+                  <div>
+                        <div id="cont_1">
+                              <h1 class="title">{%trans 'hellow my site'%}</h1>
+                              <h2 class="title is-3">{%trans 'hellow my site2'%}</h2>
+                              <p class="subtitle is-5">
+                                    {%trans 'Lorem,_ipsum dolor_sit_amet_consectetur_adipisicing_elit_Iste_explicabo_necessitatibus_beatae,_aliquid_consequuntur_praesentium_unde_sapiente_corporis_laborum_dolor_quibusdam_sed_mollitia_fugit_tenetur_cumque_porro,_aspernatur_a_temporibus?'%}
+                              </p>
+                              <a class="shadow_btn2">{%trans 'display_content' %}</a>
+                        </div>
+                  </div>
+                  {%endblock%}
+            </div>{%endblock%}
+         
+      </section>
+</header>
+<body>
+      {%block out_cont_1%}
+    <section class="body_1">
+      
+      <div id="a1"></div>
+      <div id="a2"></div>
+
+</section>{%endblock%}
+    <section style="height: 280px;" >{%block cont_1%}
+      <div id="s5_services">
+            <div id="h1" style="display: flex;justify-content: center;background-color: #00000000;box-shadow: none;">
+                  <h1 class="title is-3" style="background-color: #00000085;box-shadow: none;color: #fff;padding: 2%; border-radius: 10px;">{%trans 'services that we provide'%}</h1>
+            </div>
+            <div id="s1"><h1 class="title is-5">{%trans 'social_posts'%}</h1></div>
+            <div id="s2"><h1 class="title is-5">{%trans 'web_sites'%}</h1></div>
+            <div id="s3"><h1 class="title is-5">{%trans 'prints_x'%}</h1></div>
+            <div id="s4"><h1 class="title is-5">{%trans 'cars'%}</h1></div>
+            <div id="s5"><h1 class="title is-5">{%trans 'and more'%}</h1></div>
+      </div> 
+      <div id="cont_2">
+           
+            <div></div>
+            <div>
+                  <div id="statistics">
+                        <div id="c_1"><h1 class="title" style="color: #000;">{%trans 'statistics'%}</h1> </div>
+                        <div id="c_2"><h1 class="title is-2">{{websites_c}}</h1><span>{%trans 'web_sites__1'%} </span></div>
+                        <div id="c_3"><h1 class="title is-2">{{prints_c}}</h1> <span>{%trans 'prints_x__1'%}</span></div>
+                        <div id="c_4"><h1 class="title is-2">{{social_posts_c}}</h1> <span>{%trans 'social_posts__1'%}</span> </div>
+                        <div id="c_5"><h1 class="title is-2">{{car_models_c}}</h1>  <span>{%trans 'cars__1'%}</span> </div>
+                  </div>
+            </div>
+      </div>
+      {%endblock%}</section>
+    {%block out_content_1%}
+    <section class="body_1">
+      {%block content_1%}
+      
+      {%endblock%}
+    </section>{%endblock%}
+    
+      <script>
+            var btn_hamb=document.getElementById('menu_list');
+            function display_menu() {
+                  if (btn_hamb.style.display==="none") {
+                        btn_hamb.style.display='grid';
+                        console.log("calling grid display action");
+                  } else {
+                        btn_hamb.style.display='none';
+                        console.log("calling NONE display action");
+                  }
+                  
+            }
+            const btn_model=document.querySelectorAll(".btn_model")
+            //let count_=document.querySelector(".display_content");
+            function view_top_data(onclick_v,txt) {
+                  
+                  document.getElementById(txt).style.display='block';
+            }
+
+            function out_x(onclick_v,txt) {
+                  document.getElementById(txt).style.display='none';
+            }
+            
+      </script>
+</body>
+<footer>
+      <section class="hero is-halfheight">
+            <div class="hero-head" style="background-color: #0004ff;">uujttj</div>
+            <div class="hero-body" style="background-color: #000;" id="calls"></div>
+      </section>
+</footer>
+</html>

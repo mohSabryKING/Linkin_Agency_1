@@ -1,0 +1,39 @@
+{%extends 'menu.html'%}
+{%load i18n%}
+{%block tit%}{{head_title_websites}}{%endblock%}
+{%block out_header1%}{%block header1%}
+
+
+{%endblock%}{%endblock%}
+
+{%block cont_1%}
+<div class="output_3">
+    <div id="output_header">
+        <h1 id="h3" class="title" >{{head_title_websites}}</h1> 
+     </div>
+    {%if websites%}
+ <div class="columns is-multiline">
+     {%for i in websites%}
+     
+     <div class="column is-3" style="padding: 2%;">
+        <a href="{%url 'w_item' i.pk%}">{{i.print_model_1}}</a>    
+        
+    
+    </div>
+     {%endfor%}
+ </div>{%else%}
+ 
+ <h1 class="title">no cars to display</h1>
+ {%endif%} 
+ </div>
+ 
+
+{%endblock%}
+{%block out_content_1%}{%block content_1%}{%endblock%}{%endblock%}
+
+
+
+
+
+
+

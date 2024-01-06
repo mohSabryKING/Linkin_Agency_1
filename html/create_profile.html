@@ -1,0 +1,65 @@
+{%extends 'menu.html'%}
+{%load i18n%}{%load widget_tweaks%}
+{%block tit%}{{user.username}} profile{%endblock%}
+{%block out_header1%}{%block header1%}
+
+{%endblock%}{%endblock%}
+
+{%block cont_1%}
+<div id="output_header">
+    <h1 id="h3" class="title" >{%trans 'create_your_profile'%}</h1> 
+ </div>
+ 
+<div style="display: grid;grid-template-columns: repeat(5,auto);">
+    <div></div>
+    <div></div>
+    <div class="output_3" >
+        <form method="POST" class="form" style="padding: 10px;">
+            {%csrf_token%}
+
+<figure>
+    <img src="" width="64px" height="64px" alt="" srcset="">
+</figure>
+
+            <div class="field">
+                
+                <label for="in_1" class="label">user profile image</label>
+                <input type="file" name='in_1' id="in_1" class="input"/>
+            </div>
+            <div class="field">
+                <label for="in_2" class="label">name of the client</label>
+                <input type="text" name='in_2' id="in_2" class="input"/>
+            </div>
+            <div class="field">
+                <label for="" class="label">dealed with</label>
+                <select name="in_3" id="in_3" class="input">
+                    {%for i in providers%}
+                    <option value="{{i.emp_name}}">{{i.emp_name}}</option>
+                    {%endfor%}
+                </select>
+            </div>
+            <div class="field">
+                <label for="" class="label">phone number</label>
+                <input type="number" name='in_4' id="in_4" class="input"/>
+            </div>
+            
+            <div class="field" style="text-align: center;font-size: medium;">
+                <button type="submit" class="button is-success is-light" style="font-size: large;" >{%trans 'submit'%}</button>
+            </div>
+        </form>
+     </div>
+     <div></div>
+    <div></div>
+</div>
+
+ 
+
+{%endblock%}
+{%block out_content_1%}{%block content_1%}{%endblock%}{%endblock%}
+
+
+
+
+
+
+
